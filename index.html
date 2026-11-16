@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahcene Khelifi | Portfolio Systèmes & Réseaux</title>
+    <style>
+        /* Variables et Reset */
+        :root {
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --text: #334155;
+            --border: #e2e8f0;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', system-ui, sans-serif; }
+        body { color: var(--text); background-color: var(--light); line-height: 1.6; }
+        
+        /* Typographie */
+        h1, h2, h3 { color: var(--dark); }
+        h2 { font-size: 2rem; margin-bottom: 2rem; text-align: center; }
+        a { text-decoration: none; color: var(--primary); }
+        
+        /* Header & Hero Section */
+        header { background: var(--dark); color: white; padding: 4rem 2rem; text-align: center; }
+        .hero h1 { color: white; font-size: 2.5rem; margin-bottom: 1rem; }
+        .hero h2 { color: #94a3b8; font-size: 1.5rem; font-weight: 400; margin-bottom: 2rem; }
+        .alert-banner { display: inline-block; background: #ef4444; color: white; padding: 0.75rem 1.5rem; border-radius: 50px; font-weight: bold; margin-bottom: 2rem; animation: pulse 2s infinite; }
+        @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.05); } 100% { transform: scale(1); } }
+        
+        /* Layout principal */
+        .container { max-width: 1100px; margin: 0 auto; padding: 4rem 2rem; }
+        
+        /* Section Profil */
+        .profile-grid { display: grid; grid-template-columns: 1fr 2fr; gap: 3rem; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1); margin-bottom: 4rem; }
+        .profile-info strong { display: inline-block; width: 120px; }
+        .profile-info li { margin-bottom: 0.5rem; list-style: none; }
+        
+        /* Section Labo & Compétences */
+        .tech-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-bottom: 4rem; }
+        .tech-card { background: white; border: 1px solid var(--border); border-radius: 8px; padding: 1.5rem; transition: transform 0.3s; }
+        .tech-card:hover { transform: translateY(-5px); box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1); }
+        .tech-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem; }
+        .tag { background: #e0f2fe; color: #0369a1; padding: 0.25rem 0.75rem; border-radius: 50px; font-size: 0.875rem; font-weight: 500; }
+        
+        /* Section Certifications Google */
+        .certifications-grid { display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-bottom: 4rem; }
+        .cert-card { background: white; border: 1px solid var(--border); border-radius: 12px; padding: 2rem; width: 320px; text-align: center; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1); transition: transform 0.3s; }
+        .cert-card:hover { transform: translateY(-5px); box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1); }
+        .cert-icon img { margin-bottom: 1rem; }
+        .cert-card h3 { font-size: 1.1rem; margin-bottom: 0.5rem; }
+        .cert-card p { color: #64748b; font-size: 0.9rem; margin-bottom: 1.5rem; }
+        .btn { display: inline-block; background: var(--primary); color: white; padding: 0.75rem 1.5rem; border-radius: 6px; font-weight: 500; transition: background 0.3s; }
+        .btn:hover { background: var(--primary-hover); }
+        
+        /* Footer */
+        footer { background: var(--dark); color: white; text-align: center; padding: 2rem; margin-top: 2rem; }
+        footer a { color: #93c5fd; }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .profile-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- En-tête -->
+    <header>
+        <div class="hero container">
+            <div class="alert-banner">
+                🚀 Recherche Alternance : Dispo Immédiate (Avant le 23 Novembre)
+            </div>
+            <h1>Ahcene Khelifi</h1>
+            <h2>Technicien Supérieur Systèmes & Réseaux</h2>
+            <p>Bachelor Administrateur Systèmes et Réseaux au CESI Arras (Rythme : 1 sem école / 3 sem entreprise)</p>
+        </div>
+    </header>
+
+    <main class="container">
+        
+        <!-- À propos & Profil -->
+        <section class="profile-grid">
+            <div class="profile-info">
+                <h3>Informations</h3>
+                <ul style="margin-top: 1rem;">
+                    <li><strong>Mobilité :</strong> Valenciennes, Douai, Arras, Lille</li>
+                    <li><strong>Statut :</strong> Titre TSSR validé (Février 2026)</li>
+                    <li><strong>Profil :</strong> Reconversion mature, autonome</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Mon Objectif</h3>
+                <p style="margin-top: 1rem;">
+                    Fort de 4 années d'expérience en tant que référent sécurité, j'ai développé une grande rigueur et un sens aigu des responsabilités. Aujourd've diplômé TSSR et admis en Bachelor au CESI Arras, je recherche activement une structure d'accueil pour mettre en pratique mes compétences en administration système et infrastructure réseau. 
+                </p>
+                <p style="margin-top: 1rem;">
+                    Pragmatique et passionné, je configure et maintiens quotidiennement ma propre infrastructure virtualisée pour être immédiatement opérationnel en entreprise.
+                </p>
+            </div>
+        </section>
+
+        <!-- Certifications Google -->
+        <h2>Certifications Officielles</h2>
+        <section class="certifications-grid">
+            <!-- Certificat 1 -->
+            <div class="cert-card">
+                <div class="cert-icon">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google Logo" width="40">
+                </div>
+                <h3>Google AI Fundamentals</h3>
+                <p>Délivré par Google via Coursera</p>
+                <a href="https://coursera.org/verify/JJE35SGSUUKE" target="_blank" class="btn">Vérifier le certificat</a>
+            </div>
+
+            <!-- Certificat 2 -->
+            <div class="cert-card">
+                <div class="cert-icon">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google Logo" width="40">
+                </div>
+                <h3>The Bits & Bytes of Networking</h3>
+                <p>Google IT Support Professional</p>
+                <!-- N'oublie pas d'ajouter ton vrai lien de vérification à la place du # -->
+                <a href="#" target="_blank" class="btn">Vérifier le certificat</a>
+            </div>
+        </section>
+
+        <!-- Infrastructure & Projets -->
+        <h2>Infrastructures & Homelab</h2>
+        <section class="tech-grid">
+            <!-- Labo VMware -->
+            <div class="tech-card">
+                <h3>Virtualisation & Réseau</h3>
+                <p style="margin-top: 1rem;">Architecture imbriquée sous VMware Workstation et hyperviseur ESXi. Routage et sécurisation assurés par pfSense.</p>
+                <div class="tech-tags">
+                    <span class="tag">VMware ESXi</span>
+                    <span class="tag">pfSense</span>
+                    <span class="tag">Routage</span>
+                    <span class="tag">VLAN</span>
+                </div>
+            </div>
+
+            <!-- Microsoft -->
+            <div class="tech-card">
+                <h3>Environnement Microsoft</h3>
+                <p style="margin-top: 1rem;">Déploiement de Windows Server. Gestion de l'Active Directory, des stratégies de groupe (GPO) et intégration de clients Windows 11.</p>
+                <div class="tech-tags">
+                    <span class="tag">Windows Server</span>
+                    <span class="tag">Active Directory</span>
+                    <span class="tag">GPO</span>
+                    <span class="tag">DNS/DHCP</span>
+                </div>
+            </div>
+
+            <!-- Linux & Conteneurs -->
+            <div class="tech-card">
+                <h3>Linux & Services</h3>
+                <p style="margin-top: 1rem;">Administration quotidienne sous Linux Mint. Gestion du stockage NAS (OpenMediaVault) et orchestration de conteneurs.</p>
+                <div class="tech-tags">
+                    <span class="tag">Linux / Ubuntu</span>
+                    <span class="tag">Docker</span>
+                    <span class="tag">Portainer</span>
+                    <span class="tag">NFS / OMV</span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Portfolio d'Ahcene Khelifi — Candidature Bachelor Administrateur Systèmes & Réseaux</p>
+        <p style="margin-top: 0.5rem;">
+            <a href="https://github.com/khelifiahcene-lgtm">Profil GitHub</a> | 
+            <!-- Ajoute ton lien LinkedIn à la place du # -->
+            <a href="#">Profil LinkedIn</a>
+        </p>
+    </footer>
+
+</body>
+</html>
